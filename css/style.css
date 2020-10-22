@@ -98,7 +98,7 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-
+  flex-basis: 400px;
 }
 
 .card > header{
@@ -144,6 +144,9 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around
 }
 
 .gallery > img{
@@ -157,10 +160,14 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: flex;
+  align-items: center;
 }
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
 }
 
 .nav_item a{
@@ -180,6 +187,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    flex-basis: 225;
   }
 
   .card_big{
@@ -190,10 +198,13 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .nav_links{
     /*Your code here again.*/  
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -207,7 +218,24 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  body {
+    background-image: none;
+  }
+  header {
+    align-items: center;
+  }
+  .pricing {
+    align-items: flex-start;
+  }
+  .gallery, #gallery {
+    display: flex;
+  }
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
