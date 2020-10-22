@@ -228,7 +228,10 @@ header{
     align-items: flex-start;
   }
   .gallery, #gallery {
-    display: flex;
+    display: none;
+  }
+  footer {
+    display: block;
   }
 }
 
