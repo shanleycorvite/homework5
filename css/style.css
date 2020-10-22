@@ -146,7 +146,7 @@ footer{
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: stretch;
   justify-content: center;
 }
 
@@ -189,7 +189,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
-    flex-basis: 225;
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -201,7 +201,7 @@ header{
   header{
     /*Your code here again.*/  
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .nav_links{
@@ -231,9 +231,6 @@ header{
   }
   .gallery, #gallery {
     display: none;
-  }
-  footer {
-    display: block;
   }
 }
 
