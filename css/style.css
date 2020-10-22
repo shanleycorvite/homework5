@@ -84,11 +84,11 @@ footer{
 .pricing{
     min-height: 500px;
     /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
     display: flex;
     justify-content: center;
     align-items: center;
-    /*Don't forget to vertically and horizontally alight the card*/
-  
+    flex-wrap: wrap;
 }
 
 .card {
@@ -146,7 +146,8 @@ footer{
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around
+  align-content: space-around;
+  justify-content: center;
 }
 
 .gallery > img{
@@ -162,6 +163,7 @@ header{
   /*Your  code here again.*/
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .nav_links{
@@ -199,7 +201,7 @@ header{
   header{
     /*Your code here again.*/  
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .nav_links{
@@ -214,7 +216,7 @@ header{
 
 @media print { 
   .card {
-    flex-basis: 200px;
+    flex-basis: 225px;
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
